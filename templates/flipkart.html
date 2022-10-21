@@ -27,7 +27,7 @@
                 <a class="nav-link" href="/news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/flipkart">Flipkart.com</a>
+                <a class="nav-link active" href="/flipkart">Flipkart</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/dictionary">Dictionary</a>
@@ -47,17 +47,20 @@
       </nav>
     </div>
   </body>
-  <body style="background-color: black;">
+  <body style="background-color: rgb(233, 221, 221); ">
+    <body>
+      <img src="https://source.unsplash.com/1400x200/?ecommerce" class="d-block w-100" alt="...">
+    </body>
 
     <div class="container w-50 my-3">
     <div class="container btn btn-primary">
-        <h1>Flipkart Scraper</h1>
+        <h1>Flipkart</h1>
         <form method="POST">
             {% csrf_token %}
             <div class="mb-3">
               <label for="query" class="form-label">Search Product</label>
               <input type="text"
-                  class="form-control form-control-lg" name="query" id="query" aria-describedby="helpId" placeholder="enter a product name">
+                  class="form-control form-control-lg" name="query" id="query" aria-describedby="helpId" placeholder="Enter a product name">
               <small id="helpId" class="form-text text-white">enter mobiles, tv, laptop or frigde</small>
             </div>
             <input type="submit" class="btn btn-dark btn-lg" value="Get Data">
@@ -91,7 +94,7 @@
         {% endif %}
             
         {% empty %}
-            <p>No news found</p>
+            <p></p>
         {% endfor %}
         
        </div>
